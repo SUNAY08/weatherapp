@@ -20,9 +20,9 @@ const getInfo = async (event) => {
         datahide.classList.add("data_hide");
     } else {
 
-        let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=9fcdaec639733546522c9d7c4e1760b2`
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=9fcdaec639733546522c9d7c4e1760b2`
         console.log(url,"url");
-        
+
         try {
 
 
