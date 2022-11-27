@@ -24,9 +24,11 @@ const getInfo = async (event) => {
 
 
             let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=9fcdaec639733546522c9d7c4e1760b2`
+            console.log(url,"url");
             const response = await fetch(url);
 
             const data = await response.json()
+            console.log(data,"data after 29");
             const arrData = [data];
 
             city_name.innerText = `${arrData[0].name}, ${arrData[0].sys.country}`;
