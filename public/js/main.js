@@ -20,14 +20,14 @@ const getInfo = async (event) => {
         datahide.classList.add("data_hide");
     } else {
 
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=9fcdaec639733546522c9d7c4e1760b2`
-        console.log(url,"url");
+        // let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=9fcdaec639733546522c9d7c4e1760b2`
+        // console.log(url,"url");
 
         try {
 
 
-            // let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=9fcdaec639733546522c9d7c4e1760b2`
-            // console.log(url,"url");
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=9fcdaec639733546522c9d7c4e1760b2`
+            console.log(url,"url");
             const response = await fetch(url);
 
             const data = await response.json()
